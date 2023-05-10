@@ -1,0 +1,37 @@
+.about {
+    background-color: #F4F4F4;
+
+    .aboutContainer {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+
+        @media(max-width: 1200px) {
+            width: 90%;
+        }
+
+        .aboutArea {
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 30px;
+            text-align: justify;
+
+            @media(max-width: 1024px) {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            h2 {
+                color: blue;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+
+}

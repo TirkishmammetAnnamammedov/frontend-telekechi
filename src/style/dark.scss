@@ -1,0 +1,588 @@
+$bgColor: #111;
+$bgColor2: #222;
+$color: #999;
+$border: #333;
+
+.app.dark {
+    background-color: $bgColor2;
+    color: rgba(156, 156, 156);
+
+    .navbarTop {
+        background-color: $bgColor;
+        color: $color;
+
+        .wrapper {
+            .header-search {
+                .form {
+                    input {
+                        border: 2px solid #555;
+                    }
+
+                    .btn-default {
+                        background-color: #555;
+
+                        .searchIcon {
+                            color: $color;
+                        }
+                    }
+                }
+            }
+
+            .items {
+                .topSign {
+                    color: $color;
+
+                    .signIcon {
+                        color: $color;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .navbarBottom {
+        background-color: $bgColor;
+        border-top: 1px solid $border;
+        border-bottom: 3px solid $border;
+
+        .left {
+            .dropDown {
+                .dropDownContent {
+                    background-color: $bgColor2;
+                    border: 0.5px solid $border;
+
+                    .dropDownItem {
+                        border-bottom: 1px solid $border;
+
+                        .dpItem {
+                            .dpItemList {
+                                color: $color
+                            }
+                        }
+                    }
+
+                    .dropDownItem:hover {
+                        background-color: #444;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        .navbarContent {
+            color: $color;
+        }
+
+        .navbarContent.category {
+            background-color: $bgColor;
+        }
+
+        .item.mobile {
+            color: $color;
+        }
+
+        .right {
+            background-color: $bgColor;
+
+            .rightBtn {
+                .rightIcon {
+                    color: $color;
+                }
+
+                .rightContent {
+                    color: $color;
+                }
+            }
+
+            .prfDpDown {
+                background-color: $bgColor2;
+                border: 1px solid $border ;
+
+                .prfDpContainer {
+                    .prfDpTop {
+                        color: $color;
+                        border-bottom: 1px solid $border;
+                    }
+
+                    .prfDpContent {
+                        h3 {
+                            color: $color;
+                        }
+
+                        p {
+                            color: $color;
+                        }
+
+                        .logout {
+                            border: 3px solid gray;
+                            color: $color;
+
+                            .logoutIcon {
+                                color: $color;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    // footer
+    .footer {
+        background-color: $bgColor;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 10px 2px 6px 1px rgba(220, 218, 218, 0.55);
+
+        .fLists {
+            .fList {
+                color: $color;
+
+                .fListTop {
+                    border-bottom: none;
+                }
+
+                .fListLink {
+                    color: $color;
+                }
+            }
+
+            .bottomLogo {
+                background-color: $bgColor;
+                border-bottom: 1px solid $border;
+                box-shadow: none;
+
+                .bottomLogoTop {
+                    border-bottom: 1px solid $border;
+
+                    h2 {
+                        color: $color;
+                    }
+                }
+            }
+
+            .flogoItem {
+                color: $color;
+                border-bottom: 1px solid $border;
+
+                .bottomIcon {
+                    color: $color;
+                }
+            }
+        }
+
+        .fBottom {
+            color: $color;
+        }
+    }
+
+    // top routeList
+    .routeList {
+        background-color: $bgColor;
+
+        p {
+            color: $color;
+        }
+    }
+
+    // home page
+    .home {
+        background-color: $bgColor;
+
+        .newCardItem {
+            background-color: $bgColor2;
+
+            .cardName {
+                color: $color;
+            }
+
+            .cardInform {
+                color: $color;
+            }
+        }
+    }
+
+    //modal
+    .modall {
+        .content {
+            background-color: $bgColor2;
+
+            .out {
+                border: none;
+                background-color: #444;
+                box-shadow: none;
+            }
+        }
+    }
+
+    //notFound
+    .notfound {
+        background-color: $bgColor;
+
+        .notContainer {
+            .backHomeBtn {
+                p {
+                    border: 3px solid $border;
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    //category carousel slider
+    .ctgWrapper {
+        background-color: $bgColor;
+    }
+
+    // navbarda yerleshyan ahli kategoriyalar
+    .categories {
+        background-color: $bgColor;
+
+        .categoryContainer {
+            .ctgryList {
+                .ctgryWrapper {
+                    .rightCategoryList {
+                        .categoriesList {
+                            .сardsName {
+                                color: $color;
+                            }
+
+                            .cards {
+                                .cardItem {
+                                    .cardName {
+                                        color: $color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .searchItem {
+            background-color: $bgColor;
+
+            .searchInput {
+                border-bottom: 0.5px solid $border;
+
+                .output {
+                    background-color: $bgColor;
+                    border: 0.5px solid $border;
+
+                    .listName {
+                        p {
+                            color: $color;
+                        }
+                    }
+                }
+            }
+
+            .searchChoose {
+                border-bottom: 0.5px solid $border;
+            }
+
+            .searchButton {
+                background-color: $bgColor2;
+                border: 1px solid gray;
+                color: $color;
+            }
+        }
+    }
+
+    // Product card
+    .card {
+        background-color: $bgColor;
+
+        .cardContainer {
+            .right {
+                background-color: $bgColor;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 1px 4px 6px 1px rgba(169, 168, 168, 0.47);
+
+                .rightTop {
+                    .call {
+                        border: 2px solid #555;
+                        color: $color;
+                    }
+                }
+
+                .featureContent {
+                    .anotherName {
+                        color: $color;
+                    }
+
+                    .btnBottom {
+                        .favourite {
+                            background-color: #555;
+                            color: $color;
+                        }
+
+                        .share {
+                            background-color: #555;
+                            color: $color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cardBottom {
+            .cardBottomName {
+                background-color: $bgColor2;
+                color: $color;
+            }
+        }
+
+        .mainContent {
+            .newCardItem {
+                background-color: $bgColor2;
+
+                .cardName {
+                    color: $color;
+                }
+
+                .cardInform {
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    // Register page
+    .auth {
+        background-color: $bgColor;
+
+        .authTop {
+            background-color: $bgColor;
+        }
+
+        .formControl {
+            background-color: $bgColor;
+
+            .formGroup {
+                input {
+                    background-color: #222;
+                    border: 1px solid #333;
+                }
+            }
+
+            .formBottomLink {
+                .formBottom {
+                    .link {
+                        color: $color;
+                    }
+                }
+
+                .rightBottom {
+                    .link {
+                        color: $color;
+                    }
+                }
+            }
+
+            .formSubmit {
+                button {
+                    background-color: $bgColor2;
+                }
+            }
+        }
+    }
+
+    // search 
+    .search {
+        background-color: $bgColor;
+
+        .searchContainer {
+            .searchBox {
+                .searchName {
+                    h2 {
+                        color: $color;
+                    }
+                }
+
+                .searchItems {
+                    .searchItem {
+                        background-color: $bgColor2;
+
+                        .searchInform {
+                            color: $color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Customer pages
+    .addProduct {
+        background-color: $bgColor;
+
+        h2 {
+            color: $color;
+        }
+
+        .addArea {
+            .addLeft {
+                .addInput {
+                    input {
+                        background-color: $bgColor;
+                        border-bottom: 1px solid gray;
+                    }
+
+                    textarea {
+                        background-color: $bgColor;
+                        border: 0.5px solid lightgray;
+                    }
+                }
+            }
+        }
+
+        .addProductButton {
+            background-color: $bgColor2;
+            color: $color;
+            border: 1px solid #333;
+        }
+    }
+
+    .favourite,
+    .myProduct {
+        background-color: $bgColor;
+
+        .customerProduct {
+            .cstTop {
+                .cstTopName {
+                    background-color: $bgColor;
+                    border-top: 1px solid #333;
+                    border-left: 1px solid #333;
+                    border-right: 0.5px solid #333;
+
+                    h3,
+                    .cstArrowDown {
+                        color: $color;
+                    }
+                }
+
+                .topRightAdd {
+
+                    h3,
+                    p {
+                        color: $color;
+                    }
+                }
+            }
+
+            .cstProducts {
+                background-color: $bgColor;
+                border: none;
+                -webkit-box-shadow: 9px 6px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 5px 9px 6px 3px rgba(169, 168, 168, 0.47);
+
+                .cstProduct {
+                    .cstProductBox {
+                        .cstProductInform {
+                            color: $color;
+                        }
+                    }
+                }
+            }
+
+            .cstProductRight {
+                .delete {
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    .favour {
+        background-color: $bgColor;
+
+        .favouriteContainer {
+            .customerProduct {
+                .cstTop {
+                    .cstTopName {
+                        background-color: $bgColor;
+                        border-top: 1px solid #333;
+                        border-left: 1px solid #333;
+                        border-right: 0.5px solid #333;
+
+                        h3,
+                        .cstArrowDown {
+                            color: $color;
+                        }
+                    }
+
+                    .topRightAdd {
+
+                        h3,
+                        p {
+                            color: $color;
+                        }
+                    }
+                }
+
+                .cstProducts {
+                    background-color: $bgColor;
+                    border: none;
+                    -webkit-box-shadow: 9px 6px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 5px 9px 6px 3px rgba(169, 168, 168, 0.47);
+
+                    .cstProduct {
+                        .cstProductBox {
+                            .cstProductInform {
+                                color: $color;
+                            }
+                        }
+                    }
+                }
+
+                .cstProductRight {
+                    .delete {
+                        color: $color;
+                    }
+                }
+            }
+        }
+    }
+
+    // About pages
+    .about {
+        background-color: $bgColor;
+
+        .aboutContainer {
+            .aboutArea {
+                h2 {
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    .use {
+        background-color: $bgColor;
+
+        .useContent {
+            .useArea {
+                h2 {
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    .rule {
+        background-color: $bgColor;
+
+        .ruleContent {
+            .ruleArea {
+                h2 {
+                    color: $color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+.auth {
+    background-color: #F4F4F4;
+    height: 100vh;
+
+    .authTop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 2px 10px 1px rgba(169, 168, 168, 0.47);
+        padding: 15px 0px 15px 0px;
+
+        .logoImg {
+            height: 80px;
+            width: 150px;
+            margin-left: 20%;
+        }
+
+        p {
+            margin-left: 2%;
+            font-size: 22px;
+        }
+    }
+
+    .form {
+        margin: auto;
+        width: 35%;
+        margin-top: 60px;
+        padding: 10px 0;
+
+        .logoForMobile {
+            width: 100%;
+            text-align: center;
+            display: none;
+
+            img {
+                position: relative;
+                width: 150px;
+                height: 120px;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 22px;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .formControl {
+            background-color: #fff;
+            padding: 30px 20px 20px 20px;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 2px 10px 1px rgba(169, 168, 168, 0.47);
+
+            .formGroup {
+                padding: 5px;
+
+                label {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+
+                input {
+                    width: 90%;
+                    padding: 5px;
+                    margin: 5px 0 10px 0;
+                    outline: none;
+                    border: none;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    height: 30px;
+                    -webkit-appearance: none;
+                }
+
+                input:hover {
+                    border: 1px solid #FF6A00;
+                    box-shadow: 3px 2px 2px 1px #f869022c;
+                }
+            }
+
+            .formBottomLink {
+                display: flex;
+                justify-content: space-between;
+
+                .formBottom {
+                    display: flex;
+                    padding: 5px;
+
+                    .link {
+                        color: blue;
+                    }
+                }
+
+                .rightBottom {
+                    padding: 5px;
+
+                    .link {
+                        color: blue;
+                    }
+                }
+            }
+
+            .formSubmit {
+                padding: 5px;
+                text-align: center;
+                margin-top: 10px;
+
+                button {
+                    width: 47%;
+                    padding: 8px;
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    color: white;
+                    background-color: #FF6A00;
+                    -webkit-transition: all 0.5s ease;
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    width: 100%;
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 2px 4px 10px 5px rgba(183, 182, 182, 0.47);
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1124px) {
+        .form {
+            h3 {}
+
+            .formControl {
+                .formGroup {
+                    input {
+                        height: 20px;
+                    }
+                }
+            }
+
+            .formBottomLink {
+
+                .formBottom,
+                .rightBottom {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .form {
+            width: 75%;
+            margin-top: 20%;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            .formControl {
+                .formGroup {
+                    padding: 0px 5px;
+
+                    label {
+                        font-size: 18px;
+                        margin-top: 10px;
+                    }
+
+                    input {
+                        font-size: 18px;
+                        padding: 10px 0px 10px 10px;
+                    }
+                }
+
+                .formBottomLink {
+
+                    .formBottom,
+                    .rightBottom {
+                        font-size: 18px;
+                    }
+                }
+
+                .formSubmit {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 600px) {
+        .authTop {
+            display: none;
+        }
+
+        .form {
+            width: 100%;
+            margin-top: 0px;
+
+            .logoForMobile {
+                margin-top: 20%;
+                display: block;
+            }
+
+            h3 {
+                display: none;
+            }
+
+            .formControl {
+                background-color: #F4F4F4;
+                padding: 15px 20px 20px 20px;
+                box-shadow: none;
+
+                .formGroup {
+                    padding: 0px 5px;
+
+                    label {
+                        font-size: 16px;
+                    }
+
+                    input {
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+
+                .formBottomLink {
+                    display: block;
+
+                    .formBottom {
+                        display: flex;
+                        padding: 5px;
+                    }
+                }
+
+                .formSubmit {
+                    button {
+                        width: 100%;
+                        height: 50px;
+                        color: #FF6A00;
+                        background-color: #e9c96764;
+                        border-radius: 5px;
+                        border-bottom: 2px solid #FF6A00;
+                        border-right: 1px solid #FF6A00;
+                        border-left: 1px solid #FF6A00;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1024px) {
+        max-height: max-content;
+    }
+}

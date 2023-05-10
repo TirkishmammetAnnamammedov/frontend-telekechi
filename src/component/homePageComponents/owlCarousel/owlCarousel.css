@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.owlCarousel {
+    width: 100%;
+    height: 100%;
+}
+
+.imgSlider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.imgSlider-button {
+    position: absolute;
+    z-index: 4;
+    top: 45%;
+    width: 100%;
+}
+
+.imgSlider-button button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: white;
+    margin: 0px 10px;
+    height: 35px;
+    width: 40px;
+    background-color: rgba(85, 85, 85, 0.303);
+}
+
+.imgSlider-button button:hover {
+    color: tomato;
+}
+
+.right-button {
+    float: right;
+}
+
+.owl-wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.owl-wrapper:active,
+.owl-wrapper:hover,
+.owl-wrapper:focus {
+    outline: none;
+    border: none;
+}
+
+.owl-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 2;
+}
+
+.owl-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.owl-image img:hover .imgSlider-button button {
+    display: block;
+}
+
+.owl-wrapper:hover img {
+    opacity: .7;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.carousel .slick-dots {
+    margin-bottom: 4%;
+}
+
+.carousel .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.carousel .slick-dots li button:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    content: "";
+    text-align: center;
+    opacity: .5;
+    color: #000;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.carousel .slick-dots li.slick-active button,
+.carousel .slick-dots li:hover button {
+    border-color: tomato;
+}
+
+.carousel .slick-dots li.slick-active button:before,
+.carousel .slick-dots li:hover button:before {
+    background-color: tomato;
+    opacity: 1;
+}
+
+
+
+@media(max-width: 1024px) {
+    .owl-wrapper {
+        height: 400px;
+    }
+
+    .carousel .slick-dots {
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width: 768px) {
+    .owl-wrapper {
+        height: 400px;
+    }
+
+    .carousel .slick-dots {
+        margin-bottom: 6%;
+    }
+}
+
+@media(max-width: 600px) {
+    .owl-wrapper {
+        height: 300px;
+    }
+}
+
+@media(max-width: 420px) {
+    .owl-wrapper {
+        height: 200px;
+    }
+}

@@ -1,0 +1,254 @@
+.favour {
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .favouriteContainer {
+        margin: auto;
+        width: 75%;
+
+        @media(max-width: 1024px) {
+            width: 90%;
+        }
+
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+
+        .customerProduct {
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            padding-bottom: 15px;
+
+            .cstTop {
+                display: flex;
+                justify-content: space-between;
+
+                .cstTopName {
+                    width: max-content;
+                    padding: 10px 15px;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    border-top: 1px solid #FF6A00;
+                    border-left: 1px solid lightgray;
+                    border-right: 0.5px solid lightgray;
+
+                    h3,
+                    .cstArrowDown {
+                        color: #FF6A00;
+                    }
+                }
+
+                .topRightAdd {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 6px;
+                    gap: 3px;
+
+                    .add {
+                        font-size: 18px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .cstProducts {
+                background-color: #fff;
+                width: 100%;
+                padding: 5px;
+                border-bottom: 1px solid lightgray;
+                border-left: 1px solid lightgray;
+                border-right: 1px solid lightgray;
+                border-radius: 0px 10px 10px 10px;
+                -webkit-box-shadow: 9px 6px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 9px 6px 10px 1px rgba(169, 168, 168, 0.47);
+
+                .cstProduct {
+                    margin: 20px 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid lightgray;
+
+
+                    .cstProductImg {
+                        flex: 1;
+                        height: 145px;
+                    }
+
+                    .cstProductBox {
+                        flex: 5;
+
+                        .cstProductInform {
+                            color: blue;
+                            padding: 0px 0px 7px 0px;
+                        }
+
+                        h2 {
+                            padding-bottom: 10px;
+                        }
+
+                        h4 {
+                            padding-bottom: 10px;
+                        }
+
+                        p {
+                            color: rgba(74, 74, 74);
+                        }
+                    }
+
+                    .cstProductRight {
+                        color: red;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+
+                .notProduct {
+                    margin: 20px 10px;
+                    display: flex;
+                    gap: 100px;
+                    align-items: center;
+
+                    .notProductImg {
+                        height: 125px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 650px) {
+                        padding: 40px;
+                        text-align: center;
+
+                        .notProductImg {
+                            display: none;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .bottomAddMobile {
+                background-color: rgb(155, 155, 217);
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                align-items: center;
+                border-radius: 50%;
+                padding: 15px;
+                color: white;
+                margin-left: 85%;
+                margin-top: 15px;
+                box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+                display: none;
+
+                @media(max-width: 600px) {
+                    display: block;
+                }
+
+                @media(max-width: 500px) {
+                    margin-left: 80%;
+                }
+            }
+
+            @media(max-width: 768px) {
+                .cstTop {
+                    .cstTopName {
+                        padding: 5px 10px;
+                        border-left: none;
+                        border-right: none;
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        @media(max-width: 400px) {
+                            padding: 3px 7px;
+                            border-left: none;
+                            border-right: none;
+
+                            h3 {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    @media(max-width: 600px) {
+                        .topRightAdd {
+                            display: none;
+                        }
+                    }
+                }
+
+                .cstProducts {
+                    padding: 5px 0px;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 0px;
+
+                    .cstProduct {
+                        gap: 10px;
+
+                        .cstProductImg {
+                            height: 120px;
+                        }
+
+                        .cstProductBox {
+                            font-size: 16px;
+
+                            .cstProductInform {
+                                padding: 0px 0px 4px 0px;
+                            }
+
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .cstProductRight {
+                            .delete {
+                                font-size: 20px;
+                            }
+                        }
+
+                        @media(max-width: 400px) {
+                            gap: 5px;
+
+                            .cstProductImg {
+                                height: 90px;
+                                width: 27%;
+                            }
+
+                            .cstProductBox {
+                                font-size: 14px;
+
+                                h2 {
+                                    padding-bottom: 1px;
+                                }
+
+                                h4 {
+                                    padding-bottom: 1px;
+                                }
+                            }
+
+                            .cstProductRight {
+                                .delete {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

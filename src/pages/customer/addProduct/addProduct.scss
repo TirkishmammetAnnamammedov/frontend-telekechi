@@ -1,0 +1,281 @@
+.addProduct {
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    h2 {
+        margin-top: 15px;
+        color: rgb(75, 123, 155);
+
+        @media(max-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+
+    .addProductContainer {
+        margin: auto;
+        width: 85%;
+
+        @media(max-width: 1200px) {
+            width: 90%;
+        }
+
+        @media(max-width: 768px) {
+            width: 90%;
+        }
+
+        @media(max-width: 420px) {
+            width: 95%;
+        }
+
+        .addArea {
+            margin-top: 5px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            .addLeft {
+                width: 50%;
+
+                .addInput {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 5px;
+
+                    label {
+                        width: 45%;
+                        padding-top: 20px;
+                    }
+
+                    input {
+                        width: 50%;
+                        outline: none;
+                        border: none;
+                        padding-top: 20px;
+                        background-color: #F4F4F4;
+                        border-bottom: 1px solid lightgray;
+                    }
+
+                    textarea {
+                        width: 50%;
+                        height: 85px;
+                        outline: none;
+                        border: 0.5px solid lightgray;
+                        padding-top: 15px;
+                        background-color: #F4F4F4;
+                    }
+                }
+
+                .addCheckbox {
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+                    padding-top: 10px;
+
+                    input[type=checkbox] {
+                        width: 20px;
+                        height: 17px;
+                    }
+                }
+
+                @media(max-width: 1024px) {
+                    .addInput {
+                        label {
+                            font-size: 15px;
+                            padding-top: 15px;
+                        }
+
+                        input {
+                            padding-top: 15px;
+                        }
+
+                        input {
+                            padding-top: 15px;
+                        }
+                    }
+
+                    .addCheckbox {
+                        margin-top: 7px;
+                        padding-top: 7px;
+
+                        label {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                @media(max-width: 500px) {
+                    .addInput {
+                        label {
+                            width: 53%;
+                            font-size: 15px;
+                            padding-top: 14px;
+                        }
+
+                        input {
+                            width: 47%;
+                            padding-top: 14px;
+                            font-size: 15px;
+                        }
+
+                        textarea {
+                            height: max-content;
+                            border: none;
+                            width: 47%;
+                            padding-top: 14px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .addCheckbox {
+                        margin-top: 7px;
+                        padding-top: 7px;
+
+                        label {
+                            font-size: 15px;
+                        }
+
+                        input[type=checkbox] {
+                            width: 15px;
+                            height: 12px;
+                        }
+                    }
+                }
+            }
+
+            .addRight {
+                width: 43%;
+
+                .icon {
+                    display: flex;
+                    gap: 7px;
+                    align-items: center;
+                    cursor: pointer;
+                    padding-top: 5px;
+                }
+
+                .addRightImg {
+                    .topMainImg {
+                        border: 1px dashed gray;
+                        height: 300px;
+                        width: 100%;
+
+                        img {
+                            height: 300px;
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        margin: 10px 0px 0px 0px;
+                    }
+
+                    .bottomAnyImg {
+                        display: flex;
+                        gap: 5px;
+                        margin-top: 5px;
+
+                        .ImgBottom {
+                            img {
+                                height: 80px;
+                                width: 90px;
+                                border: 1px dashed gray;
+                            }
+                        }
+                    }
+                }
+
+                @media(max-width: 1024px) {
+                    .icon {
+                        font-size: 18px;
+                    }
+
+                    .addRightImg {
+                        .topMainImg {
+                            height: 320px;
+
+                            img {
+                                height: 320px;
+                            }
+                        }
+
+                        .bottomAnyImg {
+                            img {
+                                height: 70px;
+                                width: 90px;
+                                border: 0.5px solid lightgray;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+
+                @media(max-width: 400px) {
+                    .icon {
+                        .file {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .addRightImg {
+                        .topMainImg {
+                            height: 250px;
+
+                            img {
+                                height: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 768px) {
+                display: block;
+                flex: none;
+                justify-content: none;
+
+                .addLeft {
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+
+                .addRight {
+                    width: 100%;
+                }
+            }
+        }
+
+        .addProductButton {
+            margin-bottom: 50px;
+            padding: 7px 15px;
+            outline: none;
+            border: none;
+            color: #fff;
+            background-color: #FF6A00;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 4px 4px 10px 1px rgba(169, 168, 168, 0.47);
+            width: max-content;
+            cursor: pointer;
+
+            @media(max-width: 400px) {
+                margin-bottom: 40px;
+                font-size: 18px;
+                text-align: center;
+                width: 100%;
+                padding: 5px 0px;
+                border: 1px solid green;
+                border: none;
+            }
+        }
+
+        .addProductButton:hover {
+            -webkit-box-shadow: 9px 4px 5px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 9px 4px 5px 1px rgba(169, 168, 168, 0.47);
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.search {
+    background-color: #F4F4F4;
+
+    .searchContainer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+
+        .searchBox {
+            width: 100%;
+            margin-top: 15px;
+
+            .searchName {
+                color: rgb(75, 123, 155);
+            }
+
+            .searchNotFound {
+                margin-top: 10px;
+            }
+
+            .searchItems {
+                margin-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 1.2%;
+
+                .sItem {
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 2px 4px 10px 5px rgba(201, 201, 201, 0.47);
+                    width: 19%;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+
+                    .searchItem {
+                        padding: 0px;
+                        background-color: #fff;
+                        width: 100%;
+                        height: 100%;
+
+                        .searchImg {
+                            width: 100%;
+                            height: 200px;
+                            border-radius: 10px 10px 0 0;
+                        }
+
+                        .searchName {
+                            text-align: justify;
+                            padding: 5px 5px 0 5px;
+                            color: #024b80;
+                        }
+
+                        .searchPrice {
+                            padding: 5px 5px 0 5px;
+                            font-size: 20px;
+                            margin-bottom: 0px;
+                        }
+
+                        .searchInform {
+                            padding: 5px 5px 10px 5px;
+                            font-size: 14px;
+                            color: rgb(74, 74, 74);
+                        }
+                    }
+
+                    .searchItem:hover {
+                        box-shadow: 2px 4px 10px 6px rgba(98, 98, 94, 0.632);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 919px) {
+    .search {
+        .searchContainer {
+            .searchBox {
+                .searchItems {
+                    gap: 1.3%;
+
+                    .sItem {
+                        width: 24%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .search {
+        .searchContainer {
+            .searchBox {
+                .searchItems {
+                    gap: 2%;
+
+                    .sItem {
+                        width: 32%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 620px) {
+    .search {
+        .searchContainer {
+            .searchBox {
+                .searchItems {
+                    gap: 2%;
+
+                    .sItem {
+                        width: 49%;
+
+                        .searchItem {
+                            .searchImg {
+                                height: 175px;
+                            }
+
+                            .searchName {
+                                padding: 3px 3px 3px 5px;
+                            }
+
+                            .searchPrice {
+                                padding: 3px 3px 0 5px;
+                                font-size: 16px;
+                            }
+
+                            .searchInform {
+                                padding: 3px 3px 10px 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

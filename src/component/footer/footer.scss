@@ -1,0 +1,192 @@
+.footer {
+   width: 100%;
+   font-size: 16px;
+   background-color: #445268;
+   padding: 20px 0 0 0;
+   margin-top: 30px;
+
+   .fLists {
+      display: flex;
+      margin: 10px;
+      gap: 7%;
+
+      .fList {
+         list-style: none;
+         color: white;
+
+         .fListTop {
+            padding: 0px 10px 10px 0px;
+            border-bottom: 3px solid #FF6A00;
+            width: 130px;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+         .fListLink {
+            color: rgba(255, 255, 255, 0.908);
+            text-decoration: none;
+         }
+
+         .fListItem {
+            padding: 20px 10px 0px 0px;
+         }
+      }
+
+
+      .bottomLogo {
+         list-style: none;
+         margin-left: 5%;
+         padding: 0px 10px;
+         background-color: #fff;
+         border-radius: 5px;
+         width: 300px;
+         box-shadow: 3px 3px 10px 6px rgba(218, 214, 214, 0.06);
+
+         .bottomLogoTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #c9c8d5;
+
+            h2 {
+               font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .bottomLogoImg {
+               width: 95px;
+               height: 45px;
+               border-radius: 0 5px 0 0;
+            }
+         }
+
+         .flogoItem {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            padding: 7px 5px 7px 0px;
+            border-bottom: 1px solid #c9c8d5;
+
+            .bottomIcon {
+               color: #FF6A00;
+               margin-right: 5px;
+               font-size: 18px;
+            }
+         }
+
+         .flogoItem:last-child {
+            border-bottom: none;
+         }
+
+      }
+
+      @media(max-width: 1024px) {
+         gap: 0;
+         justify-content: space-between;
+
+         .fList {
+            font-size: 14px;
+
+            .fListItem {
+               padding: 10px 10px 5px 0px;
+            }
+         }
+
+         .bottomLogo {
+            margin-left: 1%;
+            width: 250px;
+
+            .bottomLogoTop {
+               h2 {
+                  font-size: 16px;
+               }
+
+               .bottomLogoImg {
+                  height: 45px;
+                  width: 75px;
+               }
+            }
+
+            .flogoItem {
+               font-size: 14px;
+               border-bottom: none;
+               padding: 5px 5px 5px 0px;
+            }
+         }
+      }
+
+      @media(max-width: 767px) {
+         display: grid;
+         gap: 0;
+         margin-left: 5%;
+
+         .fList {
+            margin-top: 50px;
+            font-size: 13px;
+
+            .fListLink {
+               color: rgba(255, 255, 255, 0.908);
+            }
+
+            .fListItem {
+               padding: 10px 10px 0px 0px;
+            }
+         }
+
+         .bottomLogo {
+            margin-left: 0;
+            padding: 0;
+            width: 85%;
+            background-color: #445268;
+            box-shadow: none;
+
+            .bottomLogoTop {
+               border-bottom: none;
+
+               h2 {
+                  font-size: 16px;
+                  color: white;
+               }
+
+               .bottomLogoImg {
+                  display: none;
+               }
+            }
+
+            .flogoItem {
+               font-size: 14px;
+               border-bottom: none;
+               color: rgba(255, 255, 255, 0.908);
+               padding: 5px 5px 0px 0px;
+            }
+         }
+      }
+   }
+
+   .fBottomLink {
+      display: flex;
+      margin-left: 45%;
+      width: max-content;
+      gap: 10px;
+      margin-top: 20px;
+
+      @media(max-width: 400px) {
+         margin-left: 35%;
+      }
+   }
+
+   .fBottom {
+      border-top: 1px solid gray;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      padding: 10px;
+
+      @media(max-width: 1024px) {
+         font-size: 14px;
+      }
+
+      @media(max-width: 700px) {
+         margin-top: 60px;
+      }
+   }
+}
